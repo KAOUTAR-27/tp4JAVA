@@ -1,25 +1,25 @@
-package EX8;
+package EX9;
 
 public class Main {
     public static void main(String[] args) {
 
-        Oiseau oiseau = new Oiseau();
-        Avion avion = new Avion();
+        VoitureElectrique voiture = new VoitureElectrique();
+        Moto moto = new Moto("Sport");
 
-        
-        oiseau.voler();
-        oiseau.changerAltitude(100);
-        oiseau.migrer();
-        oiseau.construireNid();
-        oiseau.atterrir();
+        voiture.demarrer();
+        voiture.accelerer(50);
+        voiture.verifierBatterie();
+        voiture.afficherAutonomie();
+        voiture.optimiserConsommation();
+        voiture.charger();
 
         System.out.println("------------------");
 
-       
-        avion.embarquerPassagers(150);
-        avion.voler();
-        avion.changerAltitude(10000);
-        avion.afficherAltitude();
-        avion.atterrir();
+        moto.demarrer();
+        moto.accelerer(80);
+        moto.faireRoueArriere();
+        moto.afficherTypeMoto();
+        moto.freiner(30);
     }
 }
+
