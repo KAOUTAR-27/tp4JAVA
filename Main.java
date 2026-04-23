@@ -1,20 +1,25 @@
-package EX7;
+package EX8;
+
 public class Main {
     public static void main(String[] args) {
 
-        Forme r = new Rectangle(5, 3);
-        Forme c = new Cercle(2);
+        Oiseau oiseau = new Oiseau();
+        Avion avion = new Avion();
 
-        r.afficherDescription();
-        System.out.println("Surface rectangle : " + r.calculerSurface());
-        System.out.println("Périmètre rectangle : " + r.calculerPerimetre());
+        
+        oiseau.voler();
+        oiseau.changerAltitude(100);
+        oiseau.migrer();
+        oiseau.construireNid();
+        oiseau.atterrir();
 
-        c.afficherDescription();
-        System.out.println("Surface cercle : " + c.calculerSurface());
-        System.out.println("Périmètre cercle : " + c.calculerPerimetre());
+        System.out.println("------------------");
 
-        int comparaison = r.comparerSurface(c);
-        System.out.println("Comparaison des surfaces : " + comparaison);
+       
+        avion.embarquerPassagers(150);
+        avion.voler();
+        avion.changerAltitude(10000);
+        avion.afficherAltitude();
+        avion.atterrir();
     }
 }
-
