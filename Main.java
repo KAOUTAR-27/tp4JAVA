@@ -1,25 +1,29 @@
-package EX9;
+package EX10;
 
 public class Main {
     public static void main(String[] args) {
 
-        VoitureElectrique voiture = new VoitureElectrique();
-        Moto moto = new Moto("Sport");
+        Livre livre = new Livre(1, "Java POO", "Auteur A");
+        Magazine magazine = new Magazine(2, "Tech Mag", "Auteur B");
+        SupportNumerique sn = new SupportNumerique(3, "E-book AI", "Auteur C");
 
-        voiture.demarrer();
-        voiture.accelerer(50);
-        voiture.verifierBatterie();
-        voiture.afficherAutonomie();
-        voiture.optimiserConsommation();
-        voiture.charger();
+       
+        livre.afficherInformations();
+        livre.emprunter();
+        livre.consulter();
+        livre.reserver();
 
-        System.out.println("------------------");
+        System.out.println("----------------");
 
-        moto.demarrer();
-        moto.accelerer(80);
-        moto.faireRoueArriere();
-        moto.afficherTypeMoto();
-        moto.freiner(30);
+     
+        magazine.afficherInformations();
+        magazine.consulter();
+
+        System.out.println("----------------");
+
+     
+        sn.afficherInformations();
+        sn.consulter();
+        sn.reserver();
     }
 }
-
